@@ -1,13 +1,14 @@
 module.exports = {
-	publicPath: './',
-	chainWebpack: config => {
+    publicPath: './',
+
+    chainWebpack: config => {
 		// 用cdn方式引入
 		config.externals({
 			"echarts": "echarts",
 		})
 	},
 
-	configureWebpack: {
+    configureWebpack: {
 		resolve: {
 			alias: {
 				'assets': '@/assets',
@@ -20,8 +21,11 @@ module.exports = {
 		}
 	},
 
-	devServer: {
+    //自动打开8080端口
+    devServer: {
 		open: true,
 		port: 8080
-	}//自动打开8080端口
+	},
+
+    outputDir: 'docs'
 }
