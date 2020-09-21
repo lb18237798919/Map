@@ -1,0 +1,28 @@
+{
+  "name": "map",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "core-js": "^3.6.4",
+    "postcss-px2rem": "^0.3.0",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-px2rem": {
+        "remUnit": 190
+      }
+    }
+  }
+}
